@@ -1,16 +1,32 @@
 :root {
   --cor-primaria:#e21;
+  --cor-escura:#900000;
+  --fundo-1:#f7f7f7;
+  --fundo-2:#ffffff;
+  --texto: #000000;
+  --subtitulo:rgba(0,0,0.2);
+
 }
 
+@media (prefers-color-scheme:dark) {
+  :root {
+    --fundo-1:#111111;
+    --fundo-2:#000000;
+    --texto: #ffffff;
+    --subtitulo:rgba(255,255,255.0.2);
+  }
+  
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   display: grid;
   justify-items: center;
   margin-top: 60px;
   gap: 60px;
+  color: var(--texto);
 }
 
 img {
@@ -43,21 +59,21 @@ p {
 
 .menu a {
   display: block;
-  background: #ffffff;
+  background: var(--fundo-2);
   padding: 15px 30px;
   border-radius: 4px;
-  color: #000000;
+  color: var(--texto);
   text-transform: uppercase;
   border-radius: 5px;
   border: solid transparent;
 }
 
 .menu a:hover {
-  border: solid #a21;
+  border: solid #e21;
 }
 
 .introducao a:hover {
-  background: #900000;
+  background: var(--cor-escura);
 }
 
 ul {
@@ -82,7 +98,7 @@ ul {
 
 .introducao {
   display: grid;
-  background-color: #ffffff;
+  background-color: var(--fundo-2);
   padding: 30px;
   text-align: right;
   align-content: center;
@@ -90,8 +106,8 @@ ul {
 }
 
 .botao {
+  background-color: var(--cor-primaria);
   color: #ffffff;
-  background-color: #a21;
   align-self: right;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -100,7 +116,8 @@ ul {
 }
 
 .subtitulo {
-  color: rgba(208, 206, 202, 0.873);
+  font-size: 4rem;
+  color: var(--subtitulo);
   text-transform: uppercase;
   font-size: 60px;
   padding: 30px;
@@ -109,7 +126,7 @@ ul {
 }
 
 .Vantagens {
-  background: #ffffff;
+  background: var(--fundo-2);
   padding: 40px;
 }
 
@@ -127,7 +144,7 @@ ul {
 
 .rodape {
   margin-top: 30px;
-  background-color: #ffffff;
+  background-color: var(--fundo-2);
   padding: 30px 20px;
   font-size: large;
   text-align: center;
