@@ -1,4 +1,6 @@
 {
+  "workbench.colorTheme": "Origamid Next",
+  "workbench.iconTheme": "origamid-next-icons",
   "editor.fontSize": 16,
   "editor.lineHeight": 1.75,
   "editor.tabSize": 2,
@@ -15,6 +17,7 @@
   "html.format.wrapAttributes": "auto",
   "html.format.wrapLineLength": 0,
   "html.autoClosingTags": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
